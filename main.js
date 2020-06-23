@@ -42,6 +42,12 @@ window.addEventListener('keyup', function (e) {
     }
 
 })
+window.addEventListener('touchstart',function(e){
+    spacePressed = true;
+})
+window.addEventListener('touchend',function(e){
+    spacePressed = false;
+})
 const bang = new Image();
 bang.src = 'bang.png';
 
