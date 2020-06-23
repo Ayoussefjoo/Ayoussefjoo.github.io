@@ -14,10 +14,10 @@ function animate() {
     handleObstacles();
     bird.update();
     bird.draw();
-    ctx.fillStyle='red';
-    ctx.font='90px Georgia';
-    ctx.strokeText(score,450,70);
-    ctx.fillText(score,450,70);
+    ctx.fillStyle = 'red';
+    ctx.font = '90px Georgia';
+    ctx.strokeText(score, 450, 70);
+    ctx.fillText(score, 450, 70);
     handleParticles();
     handleCollisions();
     if (handleCollisions()) return;
@@ -32,7 +32,7 @@ window.addEventListener('keydown', function (e) {
         spacePressed = true;
 
     }
-    if(e.code==='Enter'){ 
+    if (e.code === 'Enter') {
         window.location.reload();
     }
 })
@@ -53,20 +53,22 @@ function handleCollisions() {
                 (bird.y > canvas.height - obstaclesArray[i].bottom &&
                     bird.y + bird.height < canvas.height))) {
 
- 
+
 
             ctx.drawImage(bang, bird.x, bird.y, 50, 50);
             ctx.font = "25px Georgia";
             ctx.fillStyle = 'black';
-            
-var highScore= JSON.parse(localStorage.getItem('highScoreBirds'));
-if(highScore)
-            {
-if(score>highScore)
-highScore=score;
-localStorage.setItem('highScoreBirds',JSON.stringify(highScore));
-ctx.fillText('Game Over,High Score'+highScore+'   your score is: ' + score, 160, canvas.height / 2 - 10);
-}
-return true;
+
+            var highScore = JSON.parse(localStorage.getItem('highScoreBirds'));
+            if (highScore) {
+                if (score > highScore)
+                    highScore = score;
+               // localStorage.setItem('highScoreBirds', JSON.stringify(highScore));
+               // ctx.fillText('Game Over,High Score' + highScore + '   your score is: ' + score, 160, canvas.height / 2 - 10);
+            }
+            localStorage.setItem('highScoreBirds', JSON.stringify(highScore));
+            ctx.fillText('Game Over,High Score' + highScore + '   your score is: ' + score, 160, canvas.height / 2 - 10);
+            return true;
         }
-}}
+    }
+}
