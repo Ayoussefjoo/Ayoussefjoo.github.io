@@ -32,7 +32,7 @@ window.addEventListener('keydown', function (e) {
         spacePressed = true;
 
     }
-    if(e.code==='Enter'){
+    if(e.code==='Enter'){ 
         window.location.reload();
     }
 })
