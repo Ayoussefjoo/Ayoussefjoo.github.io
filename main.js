@@ -65,7 +65,9 @@ function handleCollisions() {
                     highScore = score;
                // localStorage.setItem('highScoreBirds', JSON.stringify(highScore));
                // ctx.fillText('Game Over,High Score' + highScore + '   your score is: ' + score, 160, canvas.height / 2 - 10);
-            }
+            }else{
+highScore = score;
+}
             localStorage.setItem('highScoreBirds', JSON.stringify(highScore));
             ctx.fillText('Game Over,High Score' + highScore + '   your score is: ' + score, 160, canvas.height / 2 - 10);
             return true;
