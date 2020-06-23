@@ -69,3 +69,4 @@ ctx.fillText('Game Over,High Score'+highScore+'   your score is: ' + score, 160,
 }
 return true;
         }
+}}
