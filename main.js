@@ -32,6 +32,9 @@ window.addEventListener('keydown', function (e) {
         spacePressed = true;
 
     }
+    if(e.code==='Enter'){
+        window.location.reload();
+    }
 })
 window.addEventListener('keyup', function (e) {
     if (e.code === 'Space') {
