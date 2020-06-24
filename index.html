@@ -1,18 +1,30 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <p>Ahmed Yousef,Mohamed Abdelbasit</p>
-        <canvas id="canvas1" style="background: url('maxresdefault.jpg')">
-        
-        </canvas>
-        <script src="bird.js"></script>
-        <script src="particles.js"></script>
-        <script src="obstacles.js"></script>
-        <script src="main.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap-reboot.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas1" style="background: url('maxresdefault.jpg')">
+
+    </canvas>
+    <button class="btn btn-secondary btn-circle btn-circle-xl m-1" onclick="repeatGame()"><i class="fas fa-redo"></i></button>    </button>
+    <script src="bird.js"></script>
+    <script src="particles.js"></script>
+    <script src="obstacles.js"></script>
+    <script src="apple.js"></script>
+    <script src="main.js"></script>
+</body>
+<script>
+    function  repeatGame() {
+    window.location.reload();
+}
+</script>
 </html>
