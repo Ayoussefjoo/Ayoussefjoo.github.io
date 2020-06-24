@@ -15,7 +15,7 @@ function animate() {
     handleapples();
     bird.update();
     bird.draw();
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = 'red'; 
     ctx.font = '90px Georgia';
     ctx.strokeText(score, 450, 70);
     ctx.fillText(score, 450, 70);
