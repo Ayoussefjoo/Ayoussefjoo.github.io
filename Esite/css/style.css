@@ -135,7 +135,7 @@ nav {
 .sub-headder h6 a {
     font-size: 13px;
     position: absolute;
-    top: 3px;
+    top: -5px;
     border: none;
     border-left: 2px solid #fff;
     left: 89px;
@@ -481,7 +481,9 @@ background-color: #212121;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
     -moz-transition: 0.5s all;
+    
 }
+.social-icons ul li.whatsapp{background:#009688;}
 .social-icons ul li.facebook {background:#0078d7;}
 .social-icons ul li.twitter{background:#1da1f2;}
 .social-icons ul li.rss{background:#f26522;}
@@ -538,9 +540,9 @@ font-family: 'Patrick Hand', cursive;
 
 .abut-img-two img {
     position: absolute;
-    top: 303px;
+    top: 130px;
     width: 82%;
-    left: 36%;
+    left: 20%;
 }
 .about-right-grid h2, .store-details h4 {
     font-size: 35px;
@@ -558,7 +560,7 @@ font-family: 'Patrick Hand', cursive;
     background: #ececec;
 }
 .grid-wthree-service img{
-border-radius: 50%;
+border-radius: 20%;
 box-shadow: 1px 1px 7px #a2a2a2;
 }
 .grid-wthree-service {
@@ -759,7 +761,7 @@ a.move-top span {
 }
 @media(max-width:1440px){
 .banner-left-side {
-    min-height: 680px;
+    min-height: 600px;
 }	
 .main-banner {
     padding-top: 15em;
@@ -768,7 +770,7 @@ a.move-top span {
     font-size: 5.7em;
 }
 #logo a {
-    font-size: 41px;
+    font-size: 22px;
 }
 .sub-headder h6 a {
     left: 85px;
@@ -844,7 +846,7 @@ padding: 3em 11em 0em;
     padding: 0em 15em;
 }
 #logo a {
-    font-size: 39px;
+    font-size: 22px;
 }
 .grid-wthree-service {
     padding: 1.6em 1.3em;
@@ -899,7 +901,7 @@ button.btn1 {
     line-height: 61px;
 }
 #logo a {
-    font-size: 37px;
+    font-size: 22px;
 }
 .title-w3ls-text p {
     padding: 0em 9em;
@@ -962,7 +964,7 @@ nav ul li a {
     padding: 8px 15px;
 }
 #logo a {
-    font-size: 35px;
+    font-size: 22px;
 }
 .banner-right-txt h5 {
     font-size: 24px;
@@ -1084,11 +1086,11 @@ font-size: 14px;
     padding: .7em 1em;
 }	
 #logo a {
-    font-size: 32px;
+    font-size: 16px;
 }
 .sub-headder h6 a {
     left: 66px;
-    top: -1px;
+    top: -9px;
 }
 .abut-img-two img {
     left: 18%;
@@ -1104,6 +1106,7 @@ font-size: 14px;
 @media(max-width:568px){
 .abut-img-two img {
     left: 15%;
+    top: 22%;
 }	
 .about-right-grid h2, .store-details h4 {
     font-size: 28px;
@@ -1158,7 +1161,7 @@ h3.title {
 }
 @media(max-width:440px){
 #logo a {
-    font-size: 30px;
+    font-size: 20px;
 }
 .banner-right-txt h5 {
     letter-spacing: 1px;
