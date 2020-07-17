@@ -132,6 +132,11 @@ nav {
     color: #fff;
     padding: 0px 12px;
 }
+.logodiv{
+    margin-left: 36px;
+    z-index: 999999;
+    position: absolute;
+}
 .sub-headder h6 a {
     font-size: 13px;
     position: absolute;
