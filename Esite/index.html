@@ -457,7 +457,14 @@
     </p>
   </footer>
   <!--//footer-copy-right -->
-
+<script>
+  var backimages=['b1.jpg','car2.jpg','car3.jpg']
+  setInterval(function(){ 
+    var element=document.getElementsByClassName("banner-left-side");
+    var number=Math.floor((Math.random() * 3) + 0);
+    element[0].style.backgroundImage = "url('images/"+backimages[number]+"')";
+   }, 3000);
+</script>
 </body>
 
 </html>
