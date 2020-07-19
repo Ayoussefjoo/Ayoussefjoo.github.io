@@ -251,5 +251,19 @@
       </div>
     </div>
   </section>
+      <script>
+  var backimages=['b1.jpg','car2.jpg','car3.jpg','car4.jpg','car5.jpg','car6.jpg']
+  setInterval(function(){ 
+    var element=document.getElementsByClassName("banner-left-side");
+    var number=Math.floor((Math.random() * 6) + 0);
+    element[0].style.backgroundImage = "url('images/"+backimages[number]+"')";
+   }, 3000);
+   function sendWhatsapp(){
+     var number='00306994729216';
+     var message ='';
+     var url = 'https://api.whatsapp.com/send?phone=' + number  + '&text='  + encodeURIComponent(message);
+     window.open(url, '_blank');
+   }
+</script>
     </body>
 </html>

@@ -106,7 +106,7 @@
               </a>
             </li>
             <li class="whatsapp">
-              <a href="#" onclick="sendWhatsapp()" title="00306994729216">
+              <a href="#" onclick="sendWhatsapp()" ontouchstart="sendWhatsapp()" title="00306994729216">
                 <span class="fa fa-whatsapp"></span>
               </a>
             </li>
@@ -458,10 +458,10 @@
   </footer>
   <!--//footer-copy-right -->
 <script>
-  var backimages=['b1.jpg','car2.jpg','car3.jpg']
+  var backimages=['b1.jpg','car2.jpg','car3.jpg','car4.jpg','car5.jpg','car6.jpg']
   setInterval(function(){ 
     var element=document.getElementsByClassName("banner-left-side");
-    var number=Math.floor((Math.random() * 3) + 0);
+    var number=Math.floor((Math.random() * 6) + 0);
     element[0].style.backgroundImage = "url('images/"+backimages[number]+"')";
    }, 3000);
    function sendWhatsapp(){
