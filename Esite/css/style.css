@@ -138,6 +138,7 @@ nav {
 }
 .logodiv{
     margin-left: 36px;
+    margin-top: -10px;
     z-index: 999999;
     position: absolute;
 }
