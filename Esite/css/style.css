@@ -10,7 +10,7 @@ padding: 0;
 margin: 0;
 background: #fff;
 letter-spacing: 1px;
-font-family: 'Roboto', sans-serif;
+font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 html {
 scroll-behavior: smooth;
@@ -39,11 +39,11 @@ transition: 0.5s all;
 -o-transition: 0.5s all;
 -ms-transition: 0.5s all;
 letter-spacing: 1px;
-font-family: 'Roboto', sans-serif;
+font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 select,input[type="email"],input[type="text"],input[type=password],
 input[type="button"],input[type="submit"],textarea,span{
-font-family: 'Roboto', sans-serif;
+font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 transition:0.5s all;
 -webkit-transition:0.5s all;
 -moz-transition:0.5s all;
@@ -59,14 +59,14 @@ h5,
 h6 {
 margin: 0;
 padding: 0;
-font-family: 'Raleway', sans-serif;
+font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 letter-spacing: 1px;
 }
 p {
 margin: 0;
 padding: 0;
 letter-spacing: 1px;
-font-family: 'Roboto', sans-serif;
+font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 ul {
 margin: 0;
@@ -81,7 +81,7 @@ h3.title {
     letter-spacing: 2px;
     font-weight: 400;
     text-transform: capitalize;
-font-family: 'Patrick Hand', cursive;
+font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .title-w3ls-text p {
     font-size: 16px;
@@ -131,6 +131,10 @@ nav {
     letter-spacing: 1px;
     color: #fff;
     padding: 0px 12px;
+}
+.logo{
+    width: 150px;
+    height: 150px;
 }
 .logodiv{
     margin-left: 36px;
@@ -511,7 +515,7 @@ background-color: #212121;
     letter-spacing: 2px;
     text-shadow: 3px 1px 11px #5f5e5e94;
     line-height: 65px;
-font-family: 'Patrick Hand', cursive;
+font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .slide-info-txt p {
     color: #dadada;
@@ -545,9 +549,9 @@ font-family: 'Patrick Hand', cursive;
 
 .abut-img-two img {
     position: absolute;
-    top: 130px;
+    top: 300px;
     width: 82%;
-    left: 20%;
+    left: 40%;
 }
 .about-right-grid h2, .store-details h4 {
     font-size: 35px;
@@ -555,7 +559,7 @@ font-family: 'Patrick Hand', cursive;
     letter-spacing: 1px;
     font-weight: 400;
     line-height: 34px;
-    font-family: 'Patrick Hand', cursive;
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .abut-img-w3l img,.abut-img-two img  {
     box-shadow: -2px -2px 5px #7b7b7b;
@@ -1254,5 +1258,14 @@ h3.title {
 h3.title {
     font-size: 35px;
 }	
+}
+
+.img-fluidcustom{
+    max-width: 80%;
+}
+.limit{
+        width:50px;
+        word-wrap: break-word;
+    
 }
 /*--//responsive--*/
