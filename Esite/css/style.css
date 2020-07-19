@@ -293,7 +293,11 @@ a.reqe-button {
     font-size: 13px;
   }
 }
-
+@media(max-width: 800px) {
+   .logodiv{
+    margin-left: -240px;
+   }
+  }
 @media all and (max-width: 767px) {
   #logo {
     display: block;
@@ -441,7 +445,16 @@ background-color: #212121;
     font-size: 14px;
   }
 }
-
+@media all and (max-width: 568px) {
+    .logodiv{
+        margin-left: -150px;
+       }
+}
+@media all and (max-width: 320px) {
+    .logodiv{
+        margin-left: -150px;
+       }
+}
 @media all and (max-width: 320px) {
   nav a,
   .menu .toggle,
@@ -1262,7 +1275,7 @@ h3.title {
 }
 
 .img-fluidcustom{
-    max-width: 80%;
+    max-width: 90%;
 }
 .limit{
         width:50px;
