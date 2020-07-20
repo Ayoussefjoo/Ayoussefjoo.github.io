@@ -657,7 +657,7 @@ box-shadow: 1px 1px 7px #a2a2a2;
 .popup {
   background: #fff;
   border-radius: 4px;
-  max-width: 430px;
+  max-width: 90%;
   position: relative;
   margin: 3em auto;
   padding: 3em 2em;
