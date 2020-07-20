@@ -47,7 +47,7 @@
       <!-- nav -->
       <nav>
         <div id="logo" class="logodiv">
-          <img src="./images/bb2.png"  class="logo"/>
+          <img src="./images/bb2.png" class="logo" />
         </div>
         <!--<div id="logo">
           <h1>
@@ -130,36 +130,36 @@
 
   <section class="about py-lg-4 py-md-4 py-sm-3 py-3">
     <!---728x90--->
-  
-      <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-    <!---728x90--->
-        <h3 class="title text-center mb-2">Vision</h3>
-        <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-          
-        </div>
-        <div class="row">
-          <div class="col-lg-5 video-info-img text-center position-relative">
-            <div class="abut-img-w3l">
-              <img src="images/bb1.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="abut-img-two">
-              <img src="images/about1.jpg" alt="" class="img-fluid">
-            </div>
+
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <!---728x90--->
+      <h3 class="title text-center mb-2">Vision</h3>
+      <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+
+      </div>
+      <div class="row">
+        <div class="col-lg-5 video-info-img text-center position-relative">
+          <div class="abut-img-w3l">
+            <img src="images/bb1.jpg" alt="" class="img-fluid">
           </div>
-          <div class="col-lg-7 left-abut-txt ">
-            <div class="about-right-grid">
-              <h2 class="mb-3">Refugee affairs among members of Arab communities</h2>
-              <p>Investing in generations with intellectual, cultural and civilizational rehabilitation for
-                the children of Arab communities in Western societies, through the use of the latest technological,
-                educational and educational systems, and not only providing health and food assistance to them .
-                Coexistence, mutual respect and upholding the values of humanity are the desired goals; Civilizations
-                converge and do not collide.</p>
-            </div>
+          <!-- <div class="abut-img-two">
+              <img src="images/about1.jpg" alt="" class="img-fluid">
+            </div>-->
+        </div>
+        <div class="col-lg-7 left-abut-txt ">
+          <div class="about-right-grid">
+            <h2 class="mb-3">Refugee affairs among members of Arab communities</h2>
+            <p>Investing in generations with intellectual, cultural and civilizational rehabilitation for
+              the children of Arab communities in Western societies, through the use of the latest technological,
+              educational and educational systems, and not only providing health and food assistance to them .
+              Coexistence, mutual respect and upholding the values of humanity are the desired goals; Civilizations
+              converge and do not collide.</p>
           </div>
         </div>
       </div>
+    </div>
     <!---728x90--->
-    </section>
+  </section>
 
   <!-- store-info -->
   <section class="store-info py-lg-4 py-md-4 py-sm-3 py-3" id="about">
@@ -205,7 +205,8 @@
               <h4>
                 Asylum documents
               </h4>
-              <p class="mt-2">Transactions and Asylum document extraction through media and news coverage via the Channel of the RMC Refugee Media Center</p>
+              <p class="mt-2">Transactions and Asylum document extraction through media and news coverage via the
+                Channel of the RMC Refugee Media Center</p>
             </div>
           </div>
         </div>
@@ -220,7 +221,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-4 col-md-6 col-sm-6 ser-icon text-center my-3">
           <div class="grid-wthree-service">
             <img src="images/serv4.jpg" alt="news image" class="img-fluid img-fluidcustom">
@@ -239,7 +240,9 @@
               <h4>
                 Merger projects
               </h4>
-              <p class="mt-2">Cooperation with the Ministry of Immigration and Asylum in the implementation of integration projects for refugees and the definition of refugees of nature and customs of Greek society</p>
+              <p class="mt-2">Cooperation with the Ministry of Immigration and Asylum in the implementation of
+                integration projects for refugees and the definition of refugees of nature and customs of Greek society
+              </p>
             </div>
           </div>
         </div>
@@ -308,6 +311,8 @@
             </a>
           </div>
         </div>
+        <div class="btnshowmore">
+          <a href="./Gallary.html" class="btn sent-butnn btn-lg">Show More</a></div>
       </div>
       <!-- popup-->
       <div id="gal1" class="popup-effect">
@@ -370,26 +375,34 @@
         <form action="#" method="post">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms">
-              <input type="text" class="form-control" placeholder="First Name" required="">
+              <input type="text" class="form-control" id="fname" placeholder="First Name" required="">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms">
-              <input type="text" class="form-control" placeholder="Last Name" required="">
+              <input type="text" class="form-control" id="lname" placeholder="Last Name" required="">
             </div>
           </div>
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms">
-              <input type="text" class="form-control" placeholder="Phone" required="">
+              <input type="text" class="form-control" id="phone" placeholder="Phone" required="">
 
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms">
-              <input type="email" class="form-control" placeholder="Email" required="">
+              <input type="email" class="form-control" id="email" placeholder="Email" required="">
             </div>
           </div>
           <div class="form-group contact-forms">
-            <textarea class="form-control" placeholder="Meassage" required=""></textarea>
+            <textarea class="form-control" id="meassage" placeholder="Meassage" required=""></textarea>
           </div>
-          <button type="submit" class="btn sent-butnn btn-lg">Send</button>
+          <button type="button" onclick="sendEmail()" class="btn sent-butnn btn-lg">Send</button>
         </form>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fulid">
+      <div class="address_mail_footer_grids">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12578.86333147241!2d23.7270982!3d37.9837605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd25565c9213%3A0xbab17f7d7c5f4596!2sPireos%204%2C%20Athina%20104%2031%2C%20Greece!5e0!3m2!1sen!2sae!4v1595215051548!5m2!1sen!2sae"></iframe>
       </div>
     </div>
   </section>
@@ -406,8 +419,8 @@
                   <h6>Address</h6>
                 </li>
                 <li>
-                  <p>Melbourne,south Brisbane,
-                    <br>QLD 4101,Aurstralia.</p>
+                  <p>Pireos 4,
+                    <br>Athina 104 31,Greece.</p>
                 </li>
               </ul>
               <ul>
@@ -430,12 +443,44 @@
             </div>
           </div>
         </div>
-        <div class="footer-bottom-info col-lg-8 col-md-8 ">
-          <div class="container-fulid">
-            <div class="address_mail_footer_grids">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3539.812628729253!2d153.014155!3d-27.4750921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a0835840a2f%3A0xdd5e3f5c208dc0e1!2sMelbourne+St%2C+South+Brisbane+QLD+4101%2C+Australia!5e0!3m2!1sen!2sin!4v1492257477691"></iframe>
+        <div class="footer-bottom-info col-lg-4 col-md-4 ">
+          <h4 class="pb-lg-4 pb-md-3 pb-3 ">Social</h4>
+          <div class="bottom-para ">
+            <div class="footer-office-hour">
+              <ul>
+                <li class="mb-2">
+                  <h6>Facebook Page</h6>
+                </li>
+                <li>
+                  <a href="http://bit.ly/2Dp4y09" target="_blank"><span class="fa fa-facebook"></span></a>
+                </li>
+              </ul>
+              <ul>
+                <li class="my-2">
+                  <h6>Facebook Group</h6>
+                </li>
+                <li>
+                  <a href="http://bit.ly/320RoAZ" target="_blank"><span class="fa fa-facebook"></span></a>
+                </li>
+                <li class="my-2">
+                  <h6>Partners</h6>
+                </li>
+                <li>
+                  <p>
+                    1- Immigrants Union of Greece
+                    <br>2- Dublin Office in Greece for family reunification file
+                  </p>
+                </li>
+
+              </ul>
             </div>
+          </div>
+        </div>
+        <div class="footer-bottom-info col-lg-4 col-md-4 ">
+          <div class="container-fulid">
+            <img src="images/gs.jpg" style="width: 88%;height: 230px; ">
+            <p>Ahmed El Masri
+              <br>Chairman of the Board of Directors</p>
           </div>
         </div>
 
@@ -457,20 +502,25 @@
     </p>
   </footer>
   <!--//footer-copy-right -->
-<script>
-  var backimages=['b1.jpg','car2.jpg','car3.jpg','car4.jpg','car5.jpg','car6.jpg']
-  setInterval(function(){ 
-    var element=document.getElementsByClassName("banner-left-side");
-    var number=Math.floor((Math.random() * 6) + 0);
-    element[0].style.backgroundImage = "url('images/"+backimages[number]+"')";
-   }, 3000);
-   function sendWhatsapp(){
-     var number='00306994729216';
-     var message ='';
-     var url = 'https://api.whatsapp.com/send?phone=' + number  + '&text='  + encodeURIComponent(message);
-     window.open(url, '_blank');
-   }
-</script>
+  <script>
+    var backimages = ['b1.jpg', 'car2.jpg', 'car3.jpg', 'car4.jpg', 'car5.jpg', 'car6.jpg']
+    setInterval(function () {
+      var element = document.getElementsByClassName("banner-left-side");
+      var number = Math.floor((Math.random() * 6) + 0);
+      element[0].style.backgroundImage = "url('images/" + backimages[number] + "')";
+    }, 3000);
+    function sendWhatsapp() {
+      var number = '00306994729216';
+      var message = '';
+      var url = 'https://api.whatsapp.com/send?phone=' + number + '&text=' + encodeURIComponent(message);
+      window.open(url, '_blank');
+    }
+    function sendEmail() {
+      var name = document.getElementById('fname').value + " " + document.getElementById('lname').value;
+      var meassagebody = "Name:" + name + "&Tel: " + document.getElementById('phone').value + "&Email: " + document.getElementById('email').value + "&Meassage: " + document.getElementById('meassage').value;
+      window.open("mailto:arabicorganization@gmail.com?subject=" + name + "&body=" + meassagebody);
+    }
+  </script>
 </body>
 
 </html>

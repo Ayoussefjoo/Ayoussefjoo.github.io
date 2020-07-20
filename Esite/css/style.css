@@ -587,7 +587,7 @@ border-radius: 20%;
 box-shadow: 1px 1px 7px #a2a2a2;
 }
 .grid-wthree-service {
-    min-height: 410px;
+    min-height: 430px;
     background: rgb(255, 255, 255);
     padding: 2em 1.5em;
     box-shadow: 0px 0px 9px #c7c7c7;
@@ -1282,5 +1282,9 @@ h3.title {
         width:50px;
         word-wrap: break-word;
     
+}
+.btnshowmore{
+    margin-left: 45%;
+    margin-top: 17px;
 }
 /*--//responsive--*/
