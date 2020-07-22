@@ -87,7 +87,7 @@ font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #888;
     letter-spacing:0px;
-    line-height: 26px;
+    line-height: 28px;
     padding: 0em 18em;
 }
 .ser-text-wthree h4,.blog-txt-info h4 a,.footer-bottom-info h4{
@@ -102,7 +102,7 @@ p{
     font-size: 14px;
     color: #888;
     letter-spacing: 1px;
-	line-height: 27px;
+	line-height: 28px;
 }
 
 /* navigation */
@@ -150,7 +150,7 @@ nav {
     border-left: 2px solid #fff;
     left: 89px;
     padding-left: 7px;
-    line-height: 21px;
+    line-height: 22px;
     color: #ffc107;
     letter-spacing: 1.5px;
     font-weight: bold;
@@ -496,7 +496,7 @@ background-color: #212121;
     width: 35px;
     text-align: center;
     height: 35px;
-    line-height: 36px;
+    line-height: 38px;
     border-radius: 50px;
     margin: 0px 2px;
     display: block;
@@ -528,7 +528,7 @@ background-color: #212121;
     text-transform: capitalize;
     letter-spacing: 2px;
     text-shadow: 3px 1px 11px #5f5e5e94;
-    line-height: 65px;
+    line-height: 66px;
 font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .slide-info-txt p {
@@ -922,7 +922,7 @@ button.btn1 {
 }
 .banner-right-txt h4 {
     font-size: 5.2em;
-    line-height: 61px;
+    line-height: 70px;
 }
 #logo a {
     font-size: 22px;
@@ -1093,7 +1093,7 @@ h3.title {
     font-size: 4em;
 }
 .banner-right-txt h4 {
-    line-height: 49px;
+    line-height: 58px;
 }	
 .title-w3ls-text p {
 font-size: 14px;
