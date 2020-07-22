@@ -33,6 +33,7 @@
 <body>
   <!-- //banner -->
   <div class="banner-left-side" id="home">
+
     <!-- header -->
     <div class="headder-top">
       <!-- nav -->
@@ -87,6 +88,7 @@
     <!-- //header -->
     <!-- banner -->
     <div class="main-banner text-center">
+
       <div class="container">
         <div class="social-icons mb-lg-4 mb-3">
           <ul>
@@ -116,6 +118,12 @@
 
       </div>
     </div>
+    <div class="slidbtn">
+      <a href="#" onclick="changeimage('prev')"  class="btn btn-primary  btn-slidlg"> <span
+          class="fa fa-chevron-left"></span></a>
+      <a href="#" onclick="changeimage('next')"  class="btn btn-primary  btn-slidlg"> <span
+          class="fa fa-chevron-right"></span></a>
+    </div>
   </div>
   <!-- //banner -->
 
@@ -133,7 +141,7 @@
           <div class="abut-img-w3l">
             <img src="images/bb1.jpg" alt="" class="img-fluid">
           </div>
-        
+
         </div>
         <div class="col-lg-7 left-abut-txt ">
           <div class="about-right-grid">
@@ -501,12 +509,31 @@
   </footer>
   <!--//footer-copy-right -->
   <script>
+    var startindex = 1;
     var backimages = ['b1.jpg', 'car2.jpg', 'car3.jpg', 'car4.jpg', 'car5.jpg', 'car6.jpg']
-    setInterval(function () {
+    /*  setInterval(function () {
+        var element = document.getElementsByClassName("banner-left-side");
+        var number = Math.floor((Math.random() * 6) + 0);
+        element[0].style.backgroundImage = "url('images/" + backimages[number] + "')";
+      }, 3000);*/
+
+    function changeimage(type) {
       var element = document.getElementsByClassName("banner-left-side");
-      var number = Math.floor((Math.random() * 6) + 0);
-      element[0].style.backgroundImage = "url('images/" + backimages[number] + "')";
-    }, 3000);
+      if (type == 'next') {
+        startindex = startindex + 1;
+        if (startindex > backimages.length - 1) {
+          startindex = 0;
+        }
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      } else {
+        startindex = startindex - 1;
+        if (startindex < 0) {
+          startindex = backimages.length-1;
+        }
+
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+    }
     function sendWhatsapp() {
       var number = '00306994729216';
       var message = '';

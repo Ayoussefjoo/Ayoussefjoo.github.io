@@ -1288,3 +1288,28 @@ h3.title {
     margin-top: 17px;
 }
 /*--//responsive--*/
+.slidbtn{
+margin-left: 45%;
+margin-top: 5%;
+}
+.btn-slidlg {
+    background: rgba(230, 230, 230, 0.5);
+    border-color: #c52c49;
+  }
+  .btn-slidlg:hover{
+      background:  #c52c49 !important;
+      border-color: #c52c49 !important;
+  }
+  .btn-slidlg:visited{
+    background:  #c52c49 !important;
+    border-color: #c52c49 !important;
+}
+.btn-slidlg:active{
+    background:  #c52c49 !important;
+    border-color: #c52c49 !important;
+}
+.btn-slidlg:focus{
+    background:  #c52c49 !important;
+    border-color: #c52c49 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.61);
+}
