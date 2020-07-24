@@ -138,7 +138,7 @@ nav {
 }
 .logodiv{
     margin-left: 36px;
-    margin-top: -10px;
+    margin-top: 85px;
     z-index: 999999;
     position: absolute;
 }
@@ -148,7 +148,7 @@ nav {
     top: -5px;
     border: none; 
     border-left: 2px solid #fff;
-    left: 89px;
+    left: 50px;
     padding-left: 7px;
     line-height: 22px;
     color: #ffc107;
@@ -797,13 +797,14 @@ a.move-top span {
     font-size: 22px;
 }
 .sub-headder h6 a {
-    left: 85px;
+    left: 154px;
+    top: 10px;
 }
 h3.title {
     font-size: 57px;
 	}
 .grid-wthree-service {
-    padding: 1.8em 1.5em;
+    padding: 0.8em 1.5em;
 }
 .address_mail_footer_grids iframe {
     height: 22em;
@@ -860,6 +861,7 @@ padding: 3em 11em 0em;
 }
 .banner-right-txt h4 {
     font-size: 5.4em;
+    line-height: 80px;
 }
 .abut-img-two img {
     top: 273px;
@@ -1276,7 +1278,8 @@ h3.title {
 }
 
 .img-fluidcustom{
-    max-width: 90%;
+    width: 100%;
+    height: 100%;
 }
 .limit{
         width:50px;
@@ -1313,83 +1316,10 @@ margin-top: 5%;
     border-color: #c52c49 !important;
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.61);
 }
-
-
-/*new gallary*/
-/* Hide the images by default */
-.mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+.Nslidbtn{
+    margin-top: -60%;
+    margin-left: 90%;
+}
+.Prvslidbtn{
+    margin-top: -60%;
+}
