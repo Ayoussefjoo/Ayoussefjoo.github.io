@@ -663,14 +663,14 @@ box-shadow: 1px 1px 7px #a2a2a2;
 }
 
 .popup {
-  background: #fff;
-  border-radius: 4px;
-  max-width: 58%;
-  position: relative;
-  margin: 3em auto;
-  padding: 3em 2em;
-  z-index: 999;
-  text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    max-width: 49%;
+    position: relative;
+    margin: 3em auto;
+    padding: 2em 1em;
+    z-index: 999;
+    text-align: center;
 }
 
 .popup .close {
@@ -1304,7 +1304,8 @@ margin-left: 45%;
 margin-top: 5%;
 }
 .btn-slidlg {
-    background: rgba(230, 230, 230, 0.5);
+    margin-top: 5px;
+    background: rgb(182 30 82 / 50%);
     border-color: #c52c49;
   }
   .btn-slidlg:hover{
@@ -1330,4 +1331,102 @@ margin-top: 5%;
 }
 .Prvslidbtn{
     margin-top: -60%;
+}
+
+
+.topsliderr{
+    margin-top: -28%;
+    margin-left: 90%;
+}
+.topsliderl{
+    margin-top: -28%;
+    margin-left: 2%;
+}
+
+
+
+@media(max-width:440px){
+    .topsliderr{
+        margin-top: -70%;
+        margin-left: 87%;
+    }
+    .topsliderl{
+        margin-top: -55%; 
+        margin-left: 2%;
+    }
+}
+@media(max-width:640px){
+    .topsliderr{
+        margin-top: -40%;
+        margin-left: 91%;
+    }
+    .topsliderl{
+        margin-top: -31%;
+        margin-left: 2%;
+    }
+}
+@media(max-width:768px){
+    .topsliderr{
+        margin-top: -35%;
+        margin-left: 92%;
+    }
+    .topsliderl{
+        margin-top: -28%;
+        margin-left: 2%;
+    }
+}
+@media(max-width:1366px){
+    .topsliderr{
+        margin-top: -35%;
+        margin-left: 92%;
+    }
+    .topsliderl{
+        margin-top: -28%;
+        margin-left: 2%;
+    }
+}
+
+.gsliderr{
+    margin-top: -60%; 
+    margin-left: 85%;
+}
+.gsliderl{
+    margin-top: -60%;
+}
+@media(max-width:440px){
+    .gsliderr{
+        margin-top: -60%; 
+        margin-left: 85%;
+    }
+    .gsliderl{
+        margin-top: -60%;
+    }
+}
+@media(max-width:640px){
+    .gsliderr{
+        margin-top: -60%; 
+        margin-left: 85%;
+    }
+    .gsliderl{
+        margin-top: -60%;
+    }
+}
+@media(max-width:768px){
+    .gsliderr{
+        margin-top: -60%; 
+        margin-left: 85%;
+    }
+    .gsliderl{
+        margin-top: -60%;
+    }
+}
+@media(max-width:1366px){
+    .gsliderr{
+        margin-top: -63%; 
+        margin-left: 85%;
+    }
+    .gsliderl{
+        margin-top: -63%;
+    margin-left: -1%;
+    }
 }
