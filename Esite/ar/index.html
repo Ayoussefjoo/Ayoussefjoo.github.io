@@ -56,7 +56,7 @@
             <a href="../ar/index.html">الرئيسية</a>
           </li>
           <li>
-            <a href="../ar/index.html#about">عنا</a>
+            <a href="../ar/index.html#about">من نحن</a>
           </li>
           <li>
             <a href="../ar/index.html#service">خدماتنا</a>
@@ -245,49 +245,49 @@
   <!--//service -->
 
   <!-- gallery -->
-  <section class="gallery py-lg-4 py-md-3 py-sm-3 py-3" id="gallery">
+  <section class="gallery py-lg-4 py-md-3 py-sm-3 py-3 store-info" id="gallery">
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
       <h3 class="title text-center mb-2">المعرض </h3>
 
       <div class="row gallery-info">
         <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
           <div class="gallery-grids">
-            <a href="#gal1">
+            <a href="#gal2" onclick="setGallaryimageindex(0)">
               <img src="../images/gal1.jpg" alt="news image" class="img-fluid">
             </a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
           <div class="gallery-grids">
-            <a href="#gal2">
-              <img src="../images/gal2.jpg" alt="news image" class="img-fluid">
+            <a href="#gal2" onclick="setGallaryimageindex(1)">
+              <img src="../images/gal2.jpg" alt="news image" class="img-fluid img-fluidcustom">
             </a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
           <div class="gallery-grids">
-            <a href="#gal3">
+            <a href="#gal2" onclick="setGallaryimageindex(2)">
               <img src="../images/gal3.jpg" alt="news image" class="img-fluid">
             </a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
           <div class="gallery-grids">
-            <a href="#gal4">
+            <a href="#gal2" onclick="setGallaryimageindex(3)">
               <img src="../images/gal4.jpg" alt="news image" class="img-fluid">
             </a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
           <div class="gallery-grids">
-            <a href="#gal5">
+            <a href="#gal2" onclick="setGallaryimageindex(4)">
               <img src="../images/gal5.jpg" alt="news image" class="img-fluid">
             </a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
           <div class="gallery-grids">
-            <a href="#gal6">
+            <a href="#gal2" onclick="setGallaryimageindex(5)">
               <img src="../images/gal6.jpg" alt="news image" class="img-fluid">
             </a>
           </div>
@@ -295,54 +295,21 @@
         <div class="btnshowmore">
           <a href="./Gallary.html" class="btn sent-butnn btn-lg">المزيد</a></div>
       </div>
-      <!-- popup-->
-      <div id="gal1" class="popup-effect">
+       <!-- popup-->
+       <div id="gal2" class="popup-effect">
         <div class="popup">
-          <img src="../images/gal1.jpg" alt="Popup Image" class="img-fluid">
+          <img src="../images/gal2.jpg" id="imgGal2" alt="Popup Image" class="img-fluid">
           <a class="close" href="#gallery">×</a>
+          <div>
+            <button onclick="changeGallaryImage('prev')" class="btn btn-primary  btn-slidlg"> <span
+                class="fa fa-chevron-left"></span></button>
+            <button onclick="changeGallaryImage('next')" class="btn btn-primary  btn-slidlg"> <span
+                class="fa fa-chevron-right"></span></button>
+          </div>
         </div>
       </div>
       <!-- //popup -->
-      <!-- popup-->
-      <div id="gal2" class="popup-effect">
-        <div class="popup">
-          <img src="../images/gal2.jpg" alt="Popup Image" class="img-fluid">
-          <a class="close" href="#gallery">×</a>
-        </div>
-      </div>
-      <!-- //popup -->
-      <!-- popup-->
-      <div id="gal3" class="popup-effect">
-        <div class="popup">
-          <img src="../images/gal3.jpg" alt="Popup Image" class="img-fluid">
-          <a class="close" href="#gallery">×</a>
-        </div>
-      </div>
-      <!-- //popup -->
-      <!-- popup-->
-      <div id="gal4" class="popup-effect">
-        <div class="popup">
-          <img src="../images/gal4.jpg" alt="Popup Image" class="img-fluid">
-          <a class="close" href="#gallery">×</a>
-        </div>
-      </div>
-      <!-- //popup -->
-      <!-- popup-->
-      <div id="gal5" class="popup-effect">
-        <div class="popup">
-          <img src="../images/gal5.jpg" alt="Popup Image" class="img-fluid">
-          <a class="close" href="#gallery">×</a>
-        </div>
-      </div>
-      <!-- //popup -->
-      <!-- popup-->
-      <div id="gal6" class="popup-effect">
-        <div class="popup">
-          <img src="../images/gal6.jpg" alt="Popup Image" class="img-fluid">
-          <a class="close" href="#gallery">×</a>
-        </div>
-      </div>
-      <!-- //popup -->
+     
     </div>
   </section>
   <!--//gallery -->
@@ -490,12 +457,33 @@
   </footer>
   <!--//footer-copy-right -->
   <script>
-    var backimages = ['b1.jpg', 'car2.jpg', 'car3.jpg', 'car4.jpg', 'car5.jpg', 'car6.jpg']
-    setInterval(function () {
+    var startindex = 1;
+    var backimages = ['b1.jpg', 'car2.jpg', 'car3.jpg', 'car4.jpg', 'car5.jpg'];
+    var gallaryImages = ['gal1.jpg', 'gal2.jpg', 'gal3.jpg','gal4.jpg','gal5.jpg','gal6.jpg'];
+    var galImagIndex = 0;
+    /*  setInterval(function () {
+        var element = document.getElementsByClassName("banner-left-side");
+        var number = Math.floor((Math.random() * 6) + 0);
+        element[0].style.backgroundImage = "url('images/" + backimages[number] + "')";
+      }, 3000);*/
+
+    function changeimage(type) {
       var element = document.getElementsByClassName("banner-left-side");
-      var number = Math.floor((Math.random() * 6) + 0);
-      element[0].style.backgroundImage = "url('../images/" + backimages[number] + "')";
-    }, 3000);
+      if (type == 'next') {
+        startindex = startindex + 1;
+        if (startindex > backimages.length - 1) {
+          startindex = 0;
+        }
+        element[0].style.backgroundImage = "url('../images/" + backimages[startindex] + "')";
+      } else {
+        startindex = startindex - 1;
+        if (startindex < 0) {
+          startindex = backimages.length - 1;
+        }
+
+        element[0].style.backgroundImage = "url('../images/" + backimages[startindex] + "')";
+      }
+    }
     function sendWhatsapp() {
       var number = '00306994729216';
       var message = '';
@@ -506,6 +494,33 @@
       var name = document.getElementById('fname').value + " " + document.getElementById('lname').value;
       var meassagebody = "Name:" + name + "&Tel: " + document.getElementById('phone').value + "&Email: " + document.getElementById('email').value + "&Meassage: " + document.getElementById('meassage').value;
       window.open("mailto:arabicorganization@gmail.com?subject=" + name + "&body=" + meassagebody);
+    }
+    function setGallaryimageindex(index) {
+      var element = document.getElementById('imgGal2');
+      galImagIndex = index;
+      element.src = "../images/" + gallaryImages[galImagIndex];
+
+    }
+
+    function changeGallaryImage(type,imgid) {
+      var element = document.getElementById('imgGal2');
+      if (type == 'next') {
+        galImagIndex = galImagIndex + 1;
+        if (galImagIndex > gallaryImages.length - 1) {
+          galImagIndex = 0;
+        }
+        console.log(galImagIndex);
+
+      } else {
+        galImagIndex = galImagIndex - 1;
+        if (galImagIndex < 0) {
+          galImagIndex = gallaryImages.length - 1;
+        }
+        console.log(galImagIndex);
+
+
+      }
+      element.src = "../images/" + gallaryImages[galImagIndex];
     }
   </script>
 </body>
