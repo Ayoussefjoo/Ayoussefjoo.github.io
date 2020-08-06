@@ -1115,7 +1115,7 @@ h3.title {
     font-size: 4em;
 }
 .banner-right-txt h4 {
-    line-height: 49px;
+    line-height: 60px;
 }	
 .title-w3ls-text p {
 font-size: 14px;
@@ -1353,7 +1353,7 @@ margin-top: 5%;
 
 
 .topsliderr{
-    margin-top: -15%;
+    margin-top: -17%;
     margin-left: 2%;
 }
 .topsliderl{
@@ -1365,37 +1365,37 @@ margin-top: 5%;
 
 @media(max-width:440px){
     .topsliderr{
-        margin-top: -70%;
+        margin-top: -17%;
         margin-left: 87%;
     }
     .topsliderl{
-        margin-top: -55%; 
+        margin-top: -15%;
         margin-left: 2%;
     }
 }
 @media(max-width:640px){
     .topsliderr{
-        margin-top: -40%;
+        margin-top: -17%;
         margin-left: 91%;
     }
     .topsliderl{
-        margin-top: -31%;
+        margin-top: -15%;
         margin-left: 2%;
     }
 }
 @media(max-width:768px){
     .topsliderr{
-        margin-top: -35%;
+        margin-top: -17%;
         margin-left: 92%;
     }
     .topsliderl{
-        margin-top: -28%;
+        margin-top: -15%;
         margin-left: 2%;
     }
 }
 @media(max-width:1366px){
     .topsliderr{
-        margin-top: -17%;
+        margin-top: -27%;
         margin-left: 92%;
     }
     .topsliderl{
