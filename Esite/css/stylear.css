@@ -13,7 +13,7 @@ body {
 padding: 0;
 margin: 0;
 background: #fff;
-letter-spacing: 1px;
+letter-spacing: 0px;
 font-family: Droid;
 }
 html {
@@ -83,7 +83,7 @@ list-style-type: none;
 h3.title {
     font-size: 60px;
     color: #000;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     font-weight: 400;
     text-transform: capitalize;
 font-family: Droid;
@@ -106,7 +106,7 @@ font-family: Droid;
 p{
     font-size: 14px;
     color: #888;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 	line-height: 27px;
 }
 
@@ -133,7 +133,7 @@ nav {
     display: initial;
     font-weight: 400;
     font-size: 43px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     color: #fff;
     padding: 0px 12px;
 }
@@ -163,7 +163,7 @@ nav {
     padding-left: 7px;
     line-height: 21px;
     color: #ffc107;
-    letter-spacing: 1.5px;
+    letter-spacing: 0px;
     font-weight: bold;
     text-transform: capitalize;
 }
@@ -205,7 +205,7 @@ nav ul li a {
     text-transform: capitalize;
     font-weight: 700;
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     padding: 8px 25px;
     border-radius: 50px;
     display: inline-block;
@@ -349,7 +349,7 @@ a.reqe-button {
     padding: 10px 18px;
     font-weight: normal;
     font-size: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -540,7 +540,7 @@ background-color: #212121;
     font-size: 6em;
     font-weight: 500;
     text-transform: capitalize;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     text-shadow: 3px 1px 11px #5f5e5e94;
     line-height: 65px;
 font-family: Droid;
@@ -724,7 +724,7 @@ box-shadow: 1px 1px 7px #a2a2a2;
 .sent-butnn {
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     background:#c50e1f;
     padding: 7px 20px;
     border-radius: 0px;
@@ -777,7 +777,7 @@ button.btn1 {
 .bottem-wthree-footer p {
     font-size: 14px;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
 }
 .bottem-wthree-footer p a {
     color: #ff5e00;
@@ -1395,11 +1395,11 @@ margin-top: 5%;
 }
 @media(max-width:1366px){
     .topsliderr{
-        margin-top: -35%;
+        margin-top: -17%;
         margin-left: 92%;
     }
     .topsliderl{
-        margin-top: -28%;
+        margin-top: -15%;
         margin-left: 2%;
     }
 }
