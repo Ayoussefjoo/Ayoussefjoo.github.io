@@ -137,6 +137,22 @@ nav {
     color: #fff;
     padding: 0px 12px;
 }
+.logo{
+    width: 80px;
+    height: 50px;
+    margin-top: -140px;
+}
+.WaterMarklogo{
+    width: 80px;
+    height: 80px;
+    opacity: 0.7;
+}
+.logodiv{
+    margin-left: 36px;
+    margin-top: 85px;
+    z-index: 999999;
+    position: absolute;
+}
 .sub-headder h6 a {
     font-size: 13px;
     position: absolute;
@@ -289,7 +305,11 @@ a.reqe-button {
     font-size: 13px;
   }
 }
-
+@media(max-width: 800px) {
+    .logodiv{
+     margin-left: -240px;
+    }
+   }
 @media all and (max-width: 767px) {
   #logo {
     display: block;
@@ -437,7 +457,16 @@ background-color: #212121;
     font-size: 14px;
   }
 }
-
+@media all and (max-width: 568px) {
+        .logodiv{
+            margin-left: -150px;
+           }
+    }
+    @media all and (max-width: 320px) {
+        .logodiv{
+            margin-left: -150px;
+           }
+    }
 @media all and (max-width: 320px) {
   nav a,
   .menu .toggle,
@@ -471,6 +500,9 @@ background-color: #212121;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     min-height:800px;
 	}
 
@@ -518,13 +550,13 @@ font-family: Droid;
     font-size: 15px;
     text-shadow: 2px 2px 8px #000;
     line-height: 27px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     padding: 3em 15em 0em;
 }
 .banner-right-txt h5 {
     font-size: 30px;
     color: #fff;
-    letter-spacing: 2px;
+    
 }
 .view-buttn a {
     font-size: 15px;
@@ -532,7 +564,7 @@ font-family: Droid;
     text-decoration: none;
     text-transform: capitalize;
     display: inline-block;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     outline: none;
     font-weight: 400;
     border-radius: 0px;
@@ -552,7 +584,7 @@ font-family: Droid;
 .about-right-grid h2, .store-details h4 {
     font-size: 35px;
     color: #c50e1f;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     text-align: right;
     font-weight: 400;
     line-height: 34px;
@@ -640,10 +672,10 @@ box-shadow: 1px 1px 7px #a2a2a2;
 .popup {
   background: #fff;
   border-radius: 4px;
-  max-width: 58%;
+  max-width: 49%;
   position: relative;
   margin: 3em auto;
-  padding: 3em 2em;
+  padding: 2em 1em;
   z-index: 999;
   text-align: center;
 }
@@ -1134,14 +1166,14 @@ font-size: 14px;
 h3.title {
     font-size: 43px;
     text-align: right;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 .contact-forms input, .contact-forms textarea {
     padding: .6em 0em;
 }
 .sent-butnn {
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 }
 @media(max-width:480px){
@@ -1168,7 +1200,7 @@ h3.title {
 	margin-top:20px;
 }	
 .bottem-wthree-footer p {
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 .blog-info {
     width: 13%;
@@ -1179,7 +1211,7 @@ h3.title {
     font-size: 20px;
 }
 .banner-right-txt h5 {
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }	
 .slide-info-txt p {
     padding: 1.7em .5em 0em;
@@ -1269,21 +1301,149 @@ h3.title {
 }	
 }
 /*--//responsive--*/
-.logo{
-    width: 80px;
-    height: 70px;
+
+.img-fluidcustom{
+    width: 100%;
+    height: 100%;
 }
-.logodiv{
-    margin-left: 36px;
-    margin-top: -10px;
-    z-index: 999999;
-    position: absolute;
+.limit{
+        width:50px;
+        word-wrap: break-word;
+    
 }
 .btnshowmore{
     margin-left: 45%;
-    margin-right: 45%;
     margin-top: 17px;
 }
-.mb-3{
-    text-align: right;
+/*--//responsive--*/
+.slidbtn{
+margin-left: 45%;
+margin-top: 5%;
+}
+.btn-slidlg {
+    margin-top: 5px;
+    background: rgb(182 30 82 / 50%);
+    border-color: #c52c49;
+  }
+  .btn-slidlg:hover{
+      background:  #c52c49 !important;
+      border-color: #c52c49 !important;
+  }
+  .btn-slidlg:visited{
+    background:  #c52c49 !important;
+    border-color: #c52c49 !important;
+}
+.btn-slidlg:active{
+    background:  #c52c49 !important;
+    border-color: #c52c49 !important;
+}
+.btn-slidlg:focus{
+    background:  #c52c49 !important;
+    border-color: #c52c49 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.61);
+}
+.Nslidbtn{
+    margin-top: -60%;
+    margin-left: 90%;
+}
+.Prvslidbtn{
+    margin-top: -60%;
+}
+
+
+.topsliderr{
+    margin-top: -15%;
+    margin-left: 2%;
+}
+.topsliderl{
+    margin-top: -15%;
+    margin-left: 2%;
+}
+
+
+
+@media(max-width:440px){
+    .topsliderr{
+        margin-top: -70%;
+        margin-left: 87%;
+    }
+    .topsliderl{
+        margin-top: -55%; 
+        margin-left: 2%;
+    }
+}
+@media(max-width:640px){
+    .topsliderr{
+        margin-top: -40%;
+        margin-left: 91%;
+    }
+    .topsliderl{
+        margin-top: -31%;
+        margin-left: 2%;
+    }
+}
+@media(max-width:768px){
+    .topsliderr{
+        margin-top: -35%;
+        margin-left: 92%;
+    }
+    .topsliderl{
+        margin-top: -28%;
+        margin-left: 2%;
+    }
+}
+@media(max-width:1366px){
+    .topsliderr{
+        margin-top: -35%;
+        margin-left: 92%;
+    }
+    .topsliderl{
+        margin-top: -28%;
+        margin-left: 2%;
+    }
+}
+
+.gsliderr{
+    margin-top: -60%; 
+    margin-left: 85%;
+}
+.gsliderl{
+    margin-top: -60%;
+}
+@media(max-width:440px){
+    .gsliderr{
+        margin-top: -60%; 
+        margin-left: 85%;
+    }
+    .gsliderl{
+        margin-top: -60%;
+    }
+}
+@media(max-width:640px){
+    .gsliderr{
+        margin-top: -60%; 
+        margin-left: 85%;
+    }
+    .gsliderl{
+        margin-top: -60%;
+    }
+}
+@media(max-width:768px){
+    .gsliderr{
+        margin-top: -60%; 
+        margin-left: 85%;
+    }
+    .gsliderl{
+        margin-top: -60%;
+    }
+}
+@media(max-width:1366px){
+    .gsliderr{
+        margin-top: -63%; 
+        margin-left: 85%;
+    }
+    .gsliderl{
+        margin-top: -63%;
+    margin-left: -1%;
+    }
 }
