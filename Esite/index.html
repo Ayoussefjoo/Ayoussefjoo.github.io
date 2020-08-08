@@ -43,7 +43,7 @@
         <div id="logo">
           <h1>
             <a href="index.html">
-              <img src="images/Nlogo.png" class="logo">
+              <img src="images/1.png" class="logo">
             </a>
           </h1>
         </div>
@@ -123,10 +123,15 @@
 
       </div>
     </div>
-    <div>
-      <a href="#" onclick="changeimage('prev')" class="btn btn-primary  btn-slidlg topsliderl"> <span
+    <div class="sliderdiv">
+      <a href="#" onclick="changeimage('prev')" class="btn btn-primary  btn-slidlg"> <span
           class="fa fa-chevron-left"></span></a>
-      <a href="#" onclick="changeimage('next')" class="btn btn-primary  btn-slidlg topsliderr"> <span
+      <a href="#" onclick="changeimage('1')" class="btn btn-primary  btn-slidlg">1</a>
+      <a href="#" onclick="changeimage('2')" class="btn btn-primary  btn-slidlg">2</a>
+      <a href="#" onclick="changeimage('3')" class="btn btn-primary  btn-slidlg">3</a>
+      <a href="#" onclick="changeimage('4')" class="btn btn-primary  btn-slidlg">4</a>
+      <a href="#" onclick="changeimage('5')" class="btn btn-primary  btn-slidlg">5</a>
+      <a href="#" onclick="changeimage('next')" class="btn btn-primary  btn-slidlg"> <span
           class="fa fa-chevron-right"></span></a>
     </div>
   </div>
@@ -317,7 +322,7 @@
           <a href="./Gallary.html" class="btn sent-butnn btn-lg">Show More</a></div>
       </div>
 
-  
+
 
 
       <!-- popup-->
@@ -334,7 +339,7 @@
         </div>
       </div>
       <!-- //popup -->
-     
+
     </div>
   </section>
   <!--//gallery -->
@@ -486,7 +491,7 @@
   <script>
     var startindex = 1;
     var backimages = ['b1.jpg', 'car2.jpg', 'car3.jpg', 'car4.jpg', 'car5.jpg'];
-    var gallaryImages = ['gal1.jpg', 'gal2.jpg', 'gal3.jpg','gal4.jpg','gal5.jpg','gal6.jpg'];
+    var gallaryImages = ['gal1.jpg', 'gal2.jpg', 'gal3.jpg', 'gal4.jpg', 'gal5.jpg', 'gal6.jpg'];
     var galImagIndex = 0;
     /*  setInterval(function () {
         var element = document.getElementsByClassName("banner-left-side");
@@ -502,7 +507,28 @@
           startindex = 0;
         }
         element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
-      } else {
+      } 
+      else if(type=='1'){
+        startindex = 0;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else if(type=='2'){
+        startindex = 1;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else if(type=='3'){
+        startindex = 2;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else if(type=='4'){
+        startindex = 3;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else if(type=='5'){
+        startindex = 4;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else {
         startindex = startindex - 1;
         if (startindex < 0) {
           startindex = backimages.length - 1;
@@ -529,7 +555,7 @@
 
     }
 
-    function changeGallaryImage(type,imgid) {
+    function changeGallaryImage(type, imgid) {
       var element = document.getElementById('imgGal2');
       if (type == 'next') {
         galImagIndex = galImagIndex + 1;

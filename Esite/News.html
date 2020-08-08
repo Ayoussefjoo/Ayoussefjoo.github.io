@@ -33,14 +33,21 @@
   <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 </head>
     <body>
-          <!-- //banner -->
+  <!-- //banner -->
   <div class="banner-left-side" id="home">
+    <div class="logodiv">
+      <img src="./images/bb2.png" class="WaterMarklogo" />
+    </div>
     <!-- header -->
     <div class="headder-top">
       <!-- nav -->
       <nav>
-        <div id="logo" class="logodiv">
-          <img src="./images/bb2.png"  class="logo"/>
+        <div id="logo">
+          <h1>
+            <a href="index.html">
+              <img src="images/1.png" class="logo">
+            </a>
+          </h1>
         </div>
         <!--<div id="logo">
           <h1>
@@ -63,24 +70,24 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="index.html#about">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="index.html#service">Services</a>
+            <a href="#service">Services</a>
           </li>
           <li>
 
           <li>
-            <a href="index.html#gallery">Gallery</a>
+            <a href="#gallery">Gallery</a>
           </li>
           <li>
             <a href="News.html">News</a>
           </li>
           <li>
-            <a href="index.html#contact">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </li>
           <li>
-            <a href="./indexar.html">عربى</a>
+            <a href="./ar/index.html">عربى</a>
           </li>
         </ul>
       </nav>
@@ -99,7 +106,7 @@
               </a>
             </li>
             <li class="whatsapp">
-              <a href="#" title="00306994729216">
+              <a href="#" onclick="sendWhatsapp()" ontouchstart="sendWhatsapp()" title="00306994729216">
                 <span class="fa fa-whatsapp"></span>
               </a>
             </li>
@@ -117,6 +124,17 @@
         </div>
 
       </div>
+    </div>
+    <div class="sliderdiv">
+      <a href="#" onclick="changeimage('prev')" class="btn btn-primary  btn-slidlg"> <span
+          class="fa fa-chevron-left"></span></a>
+      <a href="#" onclick="changeimage('1')" class="btn btn-primary  btn-slidlg">1</a>
+      <a href="#" onclick="changeimage('2')" class="btn btn-primary  btn-slidlg">2</a>
+      <a href="#" onclick="changeimage('3')" class="btn btn-primary  btn-slidlg">3</a>
+      <a href="#" onclick="changeimage('4')" class="btn btn-primary  btn-slidlg">4</a>
+      <a href="#" onclick="changeimage('5')" class="btn btn-primary  btn-slidlg">5</a>
+      <a href="#" onclick="changeimage('next')" class="btn btn-primary  btn-slidlg"> <span
+          class="fa fa-chevron-right"></span></a>
     </div>
   </div>
   <!-- //banner -->
@@ -281,20 +299,93 @@
       </div>
     </div>
   </section>
-  
-      <script>
-  var backimages=['b1.jpg','car2.jpg','car3.jpg','car4.jpg','car5.jpg','car6.jpg']
-  setInterval(function(){ 
-    var element=document.getElementsByClassName("banner-left-side");
-    var number=Math.floor((Math.random() * 6) + 0);
-    element[0].style.backgroundImage = "url('images/"+backimages[number]+"')";
-   }, 3000);
-   function sendWhatsapp(){
-     var number='00306994729216';
-     var message ='';
-     var url = 'https://api.whatsapp.com/send?phone=' + number  + '&text='  + encodeURIComponent(message);
-     window.open(url, '_blank');
-   }
-</script>
+  <script>
+    var startindex = 1;
+    var backimages = ['b1.jpg', 'car2.jpg', 'car3.jpg', 'car4.jpg', 'car5.jpg'];
+    var gallaryImages = ['gal1.jpg', 'gal2.jpg', 'gal3.jpg', 'gal4.jpg', 'gal5.jpg', 'gal6.jpg'];
+    var galImagIndex = 0;
+    /*  setInterval(function () {
+        var element = document.getElementsByClassName("banner-left-side");
+        var number = Math.floor((Math.random() * 6) + 0);
+        element[0].style.backgroundImage = "url('images/" + backimages[number] + "')";
+      }, 3000);*/
+
+    function changeimage(type) {
+      var element = document.getElementsByClassName("banner-left-side");
+      if (type == 'next') {
+        startindex = startindex + 1;
+        if (startindex > backimages.length - 1) {
+          startindex = 0;
+        }
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      } 
+      else if(type=='1'){
+        startindex = 0;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else if(type=='2'){
+        startindex = 1;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else if(type=='3'){
+        startindex = 2;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else if(type=='4'){
+        startindex = 3;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else if(type=='5'){
+        startindex = 4;
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+      else {
+        startindex = startindex - 1;
+        if (startindex < 0) {
+          startindex = backimages.length - 1;
+        }
+
+        element[0].style.backgroundImage = "url('images/" + backimages[startindex] + "')";
+      }
+    }
+    function sendWhatsapp() {
+      var number = '00306994729216';
+      var message = '';
+      var url = 'https://api.whatsapp.com/send?phone=' + number + '&text=' + encodeURIComponent(message);
+      window.open(url, '_blank');
+    }
+    function sendEmail() {
+      var name = document.getElementById('fname').value + " " + document.getElementById('lname').value;
+      var meassagebody = "Name:" + name + "&Tel: " + document.getElementById('phone').value + "&Email: " + document.getElementById('email').value + "&Meassage: " + document.getElementById('meassage').value;
+      window.open("mailto:arabicorganization@gmail.com?subject=" + name + "&body=" + meassagebody);
+    }
+    function setGallaryimageindex(index) {
+      var element = document.getElementById('imgGal2');
+      galImagIndex = index;
+      element.src = "images/" + gallaryImages[galImagIndex];
+
+    }
+
+    function changeGallaryImage(type, imgid) {
+      var element = document.getElementById('imgGal2');
+      if (type == 'next') {
+        galImagIndex = galImagIndex + 1;
+        if (galImagIndex > gallaryImages.length - 1) {
+          galImagIndex = 0;
+        }
+        console.log(galImagIndex);
+
+      } else {
+        galImagIndex = galImagIndex - 1;
+        if (galImagIndex < 0) {
+          galImagIndex = gallaryImages.length - 1;
+        }
+        console.log(galImagIndex);
+
+
+      }
+      element.src = "images/" + gallaryImages[galImagIndex];
+    }
+  </script>
     </body>
 </html>
