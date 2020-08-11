@@ -681,6 +681,19 @@ box-shadow: 1px 1px 7px #a2a2a2;
   z-index: 999;
   text-align: center;
 }
+@media(max-width:640px)
+{
+    .popup {
+        background: #fff;
+        border-radius: 4px;
+        max-width: 80%;
+        position: relative;
+        margin: 3em auto;
+        padding: 2em 1em;
+        z-index: 999;
+        text-align: center;
+    }
+}
 
 .popup .close {
   position: absolute;
@@ -1456,8 +1469,8 @@ margin-top: 5%;
 }
 @media(max-width:640px){
     .sliderdiv{
-        margin-left: 20%;
-        margin-top: 3%;
+        margin-left: 37%;
+        margin-top: 9%;
     }
 }
 
